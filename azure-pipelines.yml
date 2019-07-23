@@ -39,6 +39,7 @@ steps:
   inputs:
     appType: 'functionApp'
     appName: 'FunctionAppAzureDevOpsTest'
+    azureSubscription: 'Visual Studio Enterprise – MPN'
     deployToSlotOrASE: true
     resourceGroupName: 'azureDevOpsTest-hkb-rg'
     slotName: 'production'
