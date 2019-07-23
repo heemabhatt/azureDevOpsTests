@@ -35,3 +35,13 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
 
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise – MPN (61c6236b-0f94-47ae-842e-9f665b39de34)'
+    appType: 'functionApp'
+    appName: 'FunctionAppAzureDevOpsTest'
+    deployToSlotOrASE: true
+    resourceGroupName: 'azureDevOpsTest-hkb-rg'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
