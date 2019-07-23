@@ -34,10 +34,4 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     
-- task: AzureFunctionApp@1
-  inputs:
-    azureSubscription: 'azureDevOpsTest-hkb - Azure'
-    appType: 'functionApp'
-    appName: 'FunctionAppAzureDevOpsTest'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
+ 
