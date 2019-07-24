@@ -32,6 +32,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
 - task: AzureFunctionApp@1
   inputs:
     azureSubscription: 'Visual Studio Enterprise – MPN(61c6236b-0f94-47ae-842e-9f665b39de34)'
