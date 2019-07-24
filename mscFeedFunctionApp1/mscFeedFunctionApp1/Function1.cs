@@ -8,9 +8,9 @@ namespace mscFeedFunctionApp1
     public static class Function1
     {
         [FunctionName("hbhatt-mscfeedFunctionApp")]
-        public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, ILogger log)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            log.LogInformation($"new C# Timer trigger function executed at: {DateTime.Now}");
         }
     }
 }
